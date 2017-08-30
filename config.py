@@ -11,7 +11,7 @@ HIDE_HIDDEN_ENTRIES = True      # default: True
 HIDE_INDEX_HTML_FILES = True    # default: True
 HIDE_ICONS_FOLDER = False       # default: True
 MONOSPACED_FONTS = True         # default: True
-SERVER_INFO = "Apache/2.4.18 at dropbox.com Port 80"
+SERVER_INFO = "https://download.arangodb.com at Port 443 (Official ArangoDB Repository)"
 
 #icons folder in your dropbox
 DROPBOX_ICON_FOLDER = "/home/jabba/Dropbox/assets/static_html_icons"

@@ -173,7 +173,8 @@ def get_entries(dirpath, names):
     paths = []
     
     for name in names:
-        paths.append(get_entry(Path(dirpath, name)))
+        if name != 'enterprise':
+            paths.append(get_entry(Path(dirpath, name)))
     
     paths.sort()
     
