@@ -22,6 +22,7 @@ import re
 import utils
 import config
 import argparse
+import operator
 from unipath import Path
 from time import gmtime, strftime
 from jinja2 import Environment, FileSystemLoader
@@ -175,8 +176,8 @@ def get_entries(dirpath, names):
     for name in names:
         if name != 'enterprise':
             paths.append(get_entry(Path(dirpath, name)))
-    
-    paths.sort()
+
+    paths.sort(key=operator.attrgetter('name'))
     
     return paths
 
